@@ -51,7 +51,7 @@ const Hero = () => {
             </div>
           </div>
           <a href="/Hostels" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">Hostels</a>
-          <a href="/Chat" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">Agents</a>
+          <a href="/Agents" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">Agents</a>
           <a href="/About" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">About Us</a>
         </nav>
 
