@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react";
+import Footer from "../Components/Footer";
 
 // components/AboutUs.js
 export default function AboutUs() {
@@ -51,6 +52,7 @@ export default function AboutUs() {
             </p>
           </div>
         </div>
+        <Footer/>
       </section>
     );
   }
