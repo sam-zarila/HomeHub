@@ -35,16 +35,8 @@ const Hero = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex flex-grow justify-center space-x-8 text-white font-semibold">
           <a href="/Home" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">Home</a>
-          <div className="relative group">
-            <a href="#" className="text-lg tracking-wider hover:text-gray-300 transition-all duration-300">Categories</a>
-            <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-              <ul className="py-2">
-                <li><a href="#" className="block px-4 py-2 hover:bg-gray-200">Rentals</a></li>
-                <li><a href="#" className="block px-4 py-2 hover:bg-gray-200">For Sale</a></li>
-                <li><a href="#" className="block px-4 py-2 hover:bg-gray-200">Cars</a></li>
-              </ul>
-            </div>
-          </div>
+        
+  
           <a href="/Hostels" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">Hostels</a>
           <a href="/Agents" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">Agents</a>
           <a href="/About" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">About Us</a>
