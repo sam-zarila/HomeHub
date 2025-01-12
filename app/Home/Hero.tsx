@@ -2,11 +2,11 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
-// import Logo from '../Images/Logo.jpg';
+// Import your logo image here if needed
 
 const Hero = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false); // For handling the categories dropdown
+  const [isCategoriesOpen, setIsCategoriesOpen] = useState(false);
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
@@ -18,10 +18,8 @@ const Hero = () => {
 
   return (
     <div className="relative h-[600px] w-full bg-cover bg-center bg-[url('https://i.pinimg.com/736x/60/e7/34/60e734b36b4dd27226288ef72601d910.jpg')]">
-      {/* Overlay */}
       <div className="absolute inset-0 bg-black/70"></div>
 
-      {/* Modern Header */}
       <header className="relative z-10 flex items-center justify-between px-6 py-4 bg-black/50 backdrop-blur-lg shadow-md">
         {/* Logo */}
         <div>
@@ -37,9 +35,6 @@ const Hero = () => {
         {/* Desktop Navigation */}
         <nav className="hidden md:flex flex-grow justify-center space-x-8 text-white font-semibold">
           <a href="/Home" className="hover:text-gray-300 transition-all duration-300 text-lg tracking-wider">Home</a>
-         
-          
-          {/* Categories Dropdown */}
           <div className="relative group">
             <a href="#" className="text-lg tracking-wider hover:text-gray-300 transition-all duration-300">Categories</a>
             <div className="absolute left-0 mt-2 w-48 bg-white text-black rounded-md shadow-lg opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -128,11 +123,11 @@ const Hero = () => {
       {/* Hero Text */}
       <div className="relative z-10 text-center mt-16">
         <h1 className="text-white text-5xl font-bold">
-          Find A House, Land <br />
-          <span className="mt-4 block">That Suits You</span>
+          Find Off-Campus <br />
+          <span className="mt-4 block">Accommodation</span>
         </h1>
         <p className="text-white text-lg mt-4">
-          We are ready to help you find a house, land, or car <br /> for rent or sale that suits your lifestyle and needs.
+          Discover the perfect off-campus accommodation that suits your needs and lifestyle.
         </p>
 
         {/* Call to Action Buttons */}
