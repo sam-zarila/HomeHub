@@ -12,12 +12,6 @@ const Services = () => {
       image: "/images/affordable-housing.jpg",
     },
     {
-      title: "Fully Furnished Rooms",
-      description:
-        "Move in hassle-free with rooms that are fully equipped with modern furniture and appliances.",
-      image: "/images/furnished-rooms.jpg",
-    },
-    {
       title: "Proximity to Campus",
       description:
         "Enjoy housing options located within walking distance or a short commute to campus.",
