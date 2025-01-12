@@ -1,53 +1,43 @@
-'use client'
+"use client";
 
-import { useState } from "react";
-import Footer from "../Components/Footer";
+import React from "react";
+import Image from "next/image";
 
-// components/AboutUs.js
-export default function AboutUs() {
-    
-    return (
-        <>
-        <section className="bg-white py-16">
-        
-        
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 lg:grid-cols-2 gap-8">
-          
-          <div className="flex justify-center items-center">
-            <img 
-              src="https://i.pinimg.com/564x/47/5f/3e/475f3ea56aa59d357a17472de6331f4c.jpg" 
-              alt="Modern living space in Malawi" 
-              className="rounded-lg shadow-lg w-full h-full object-cover"
-            />
-          </div>
-          
-          {/* Text Section */}
-          <div className="flex flex-col justify-center">
-            <h2 className="text-4xl font-bold text-gray-900">
-              About HomeHub Malawi
-            </h2>
-            <p className="mt-4 text-gray-600 text-lg">
-              HomeHub Malawi is a comprehensive platform dedicated to revolutionizing the real estate market in Malawi. 
-              Our goal is to bridge the gap between property seekers and sellers, offering a seamless experience for 
-              renting, buying, and selling properties. We focus on transparency, user-friendliness, and innovation, 
-              providing a reliable solution for all your housing needs.
-            </p>
-            <p className="mt-4 text-gray-600 text-lg">
-              We empower communities by simplifying the process of finding the perfect home or investment opportunity. 
-              Whether you are a first-time homebuyer, a property investor, or simply looking for a place to rent, our 
-              platform offers a diverse range of listings to suit every need and budget.
-            </p>
-            <p className="mt-4 text-gray-600 text-lg">
-              Join us as we transform the way Malawians connect with real estate, making property transactions more 
-              accessible, efficient, and secure.
-            </p>
-          </div>
+const AboutUs = () => {
+  return (
+    <>
+    <section className="py-16 bg-gray-50">
+      <div className="container mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+        {/* Left Section: Text */}
+        <div>
+          <h2 className="text-4xl font-bold text-gray-800 mb-6">
+            About Us
+          </h2>
+          <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+            We are dedicated to providing students with safe, affordable, and comfortable off-campus accommodations. With a range of options tailored to suit different needs and budgets, we aim to make your living experience stress-free and enjoyable.
+          </p>
+          <p className="text-lg text-gray-600 mb-4 leading-relaxed">
+            Our mission is to bridge the gap between students and high-quality housing by offering easy access to verified listings, secure environments, and amenities that make you feel at home.
+          </p>
+          <p className="text-lg text-gray-600 leading-relaxed">
+            Whether you're looking for a quiet space to study or a vibrant community to connect with others, we've got you covered. Let us help you find the perfect place to live while you focus on your academic journey.
+          </p>
         </div>
-        
-      </section>
-     
-      </>
-      
-    );
-  }
-  
+
+        {/* Right Section: Image */}
+        <div>
+          <Image
+            src="/images/about-us.jpg" // Replace with your own image path
+            alt="About Us"
+            width={600}
+            height={400}
+            className="rounded-lg shadow-lg"
+          />
+        </div>
+      </div>
+    </section>
+    </>
+  );
+};
+
+export default AboutUs;
